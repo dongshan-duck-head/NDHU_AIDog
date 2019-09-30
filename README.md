@@ -20,7 +20,7 @@ flutter run
 ## TODO
 
 - [ ] Android版
-    -[x] 辨識功能
+    - [x] 辨識功能
 - [ ] IOS版 
 
 ## Ref.

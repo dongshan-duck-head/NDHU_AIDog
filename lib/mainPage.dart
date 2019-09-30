@@ -7,6 +7,7 @@ import 'camera.dart';
 import 'bndbox.dart';
 import 'models.dart';
 
+// main Page
 class HomePage extends StatefulWidget {
   final List<CameraDescription> cameras;
 
@@ -53,6 +54,7 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  // ----- 主畫面 -----
   @override
   Widget build(BuildContext context) {
     Size screen = MediaQuery.of(context).size;
@@ -63,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
-                    child: const Text(mobilenet),
+                    child: const Text('辨識狗狗'),
                     onPressed: () => onSelect(mobilenet),
                   ),
                 ],

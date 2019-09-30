@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// 輸出結果的UI
+
 class BndBox extends StatelessWidget {
   final List<dynamic> results;
   final int previewH;
@@ -14,19 +16,19 @@ class BndBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Widget> _renderStrings() {
-      double offset = -10;
+      double offset = 500;
       return results.map((re) {
-        offset = offset + 14;
+        offset = offset + 20;
         return Positioned(
-          left: 10,
+          left: 100,
           top: offset,
           width: screenW,
           height: screenH,
           child: Text(
             "${re["label"]} ${(re["confidence"] * 100).toStringAsFixed(0)}%",
             style: TextStyle(
-              color: Color.fromRGBO(37, 213, 253, 1.0),
-              fontSize: 14.0,
+              color: Colors.lightBlue,
+              fontSize: 20.0,
               fontWeight: FontWeight.bold,
             ),
           ),
