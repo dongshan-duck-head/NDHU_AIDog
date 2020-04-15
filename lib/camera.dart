@@ -30,7 +30,7 @@ class _CameraState extends State<Camera> {
     } else {
       controller = new CameraController(
         widget.cameras[0],
-        ResolutionPreset.medium,
+        ResolutionPreset.veryHigh,
       );
       controller.initialize().then((_) {
         if (!mounted) {
